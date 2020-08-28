@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k4p-GU-vVT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AJTagLayout-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AJTagLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="We5-9o-TTQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DP2-Ax-61w">
+                                        <rect key="frame" x="8" y="8" width="398" height="660"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DP2-Ax-61w" firstAttribute="top" secondItem="We5-9o-TTQ" secondAttribute="top" constant="8" id="FMO-3b-SrY"/>
+                                    <constraint firstAttribute="bottom" secondItem="DP2-Ax-61w" secondAttribute="bottom" constant="8" id="Pa7-Fn-cPN"/>
+                                    <constraint firstAttribute="trailing" secondItem="DP2-Ax-61w" secondAttribute="trailing" constant="8" id="aj0-Xq-Oqb"/>
+                                    <constraint firstItem="DP2-Ax-61w" firstAttribute="leading" secondItem="We5-9o-TTQ" secondAttribute="leading" constant="8" id="c4o-uU-WnV"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-Ot-aVC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="Nfr-Iw-Cu6" customClass="AJTagLayout" customModule="AJTagLayout" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCollectionViewCell" id="Wn8-7d-FsR" customClass="TagCollectionViewCell" customModule="AJTagLayout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="P4U-AR-PG9">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCY-rO-GD5">
+                                                    <rect key="frame" x="8" y="8" width="42" height="34"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eCY-rO-GD5" secondAttribute="bottom" constant="8" id="3qC-PP-sLY"/>
+                                                <constraint firstItem="eCY-rO-GD5" firstAttribute="top" secondItem="P4U-AR-PG9" secondAttribute="top" constant="8" id="TA4-Jv-6oT"/>
+                                                <constraint firstAttribute="trailing" secondItem="eCY-rO-GD5" secondAttribute="trailing" constant="8" id="eaX-2E-oG5"/>
+                                                <constraint firstItem="eCY-rO-GD5" firstAttribute="leading" secondItem="P4U-AR-PG9" secondAttribute="leading" constant="8" id="i9L-N7-q68"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="58" height="50"/>
+                                        <connections>
+                                            <outlet property="label" destination="eCY-rO-GD5" id="7Hu-nY-Vuo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rUs-HR-eFJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fRJ-ig-aOQ"/>
+                                </connections>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7iR-4R-beR">
+                                <rect key="frame" x="25" y="776" width="364" height="32"/>
+                                <segments>
+                                    <segment title="Leading"/>
+                                    <segment title="Center"/>
+                                    <segment title="Trailing"/>
+                                    <segment title="Justified"/>
+                                    <segment title="Fill"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeHorizontalAlignment:" destination="BYZ-38-t0r" eventType="valueChanged" id="8iS-bu-QVc"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-so-8dL">
+                                <rect key="frame" x="110" y="819" width="194" height="32"/>
+                                <segments>
+                                    <segment title="Top"/>
+                                    <segment title="Center"/>
+                                    <segment title="Bottom"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeVerticalAlignment:" destination="BYZ-38-t0r" eventType="valueChanged" id="xXM-FO-rkL"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="We5-9o-TTQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3mJ-FA-Bvr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mY7-so-8dL" secondAttribute="bottom" constant="12" id="8DM-jH-CPK"/>
+                            <constraint firstItem="eo4-Ot-aVC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fo0-ty-Ume"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eo4-Ot-aVC" secondAttribute="trailing" id="KrR-0T-ys2"/>
+                            <constraint firstItem="We5-9o-TTQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lga-Qd-oqF"/>
+                            <constraint firstItem="eo4-Ot-aVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b0X-zQ-Xvt"/>
+                            <constraint firstItem="mY7-so-8dL" firstAttribute="top" secondItem="7iR-4R-beR" secondAttribute="bottom" constant="12" id="iET-mD-wzW"/>
+                            <constraint firstItem="7iR-4R-beR" firstAttribute="top" secondItem="eo4-Ot-aVC" secondAttribute="bottom" constant="12" id="jUA-BL-iXC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="We5-9o-TTQ" secondAttribute="trailing" id="o2e-4h-icZ"/>
+                            <constraint firstItem="7iR-4R-beR" firstAttribute="top" secondItem="We5-9o-TTQ" secondAttribute="bottom" constant="12" id="pL7-jt-Aq5"/>
+                            <constraint firstItem="mY7-so-8dL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pfu-6p-XKc"/>
+                            <constraint firstItem="7iR-4R-beR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wVH-HR-X1V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AJTagLayout" id="BNX-fy-JpS">
+                        <barButtonItem key="leftBarButtonItem" title="Shuffle" id="JRt-Hj-coB">
+                            <connections>
+                                <action selector="shuffleTags:" destination="BYZ-38-t0r" id="aIv-Fa-hMI"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="trash" id="GVU-rD-s1I">
+                                <connections>
+                                    <action selector="removeTag:" destination="BYZ-38-t0r" id="bHk-Kr-DY5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="ghk-Ev-tSL">
+                                <connections>
+                                    <action selector="addTag:" destination="BYZ-38-t0r" id="l0b-H4-bwz"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="eo4-Ot-aVC" id="4bm-Km-d90"/>
+                        <outlet property="segment" destination="7iR-4R-beR" id="L4h-R0-SqM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Exk-V2-b19">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k4p-GU-vVT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bD3-80-oiJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4kL-ju-FXh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNq-Cx-gU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
